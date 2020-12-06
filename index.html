@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div id="bg1">
+        <nav>
+            <div id="left">
+                <i id="menu" class="ri-menu-line"></i>
+                <h2>BakeIndia</h2>
+            </div>
+            <div id="mid">
+                <a href="#">Home</a>
+                <a href="#">Bakery</a>
+                <a href="#">Contact</a>
+                <a href="#">Pricing</a>
+            </div>
+            <div id="right">
+                <i class="ri-search-line"></i>
+                <i class="ri-shopping-cart-2-line"></i>
+                <i class="ri-heart-3-line"></i>
+                <button>Buy now</button>
+            </div>
+        </nav>
+        <div id="body">
+            <div id="circles">
+                <div id="circle1">
+                    <i class="ri-arrow-drop-up-line"></i>
+                </div>
+                <div id="circle2">
+                    <div id="smcircle">
+                        <h2>1</h2>
+                    </div>
+                </div>
+                <div id="circle3">
+                    <i class="ri-arrow-drop-down-line"></i>
+                </div>
+            </div>
+            <img src="./Assets/Donut png.png" alt="">
+            <h1> <span>D</span>onu<span>t</span></h1>
+            <div id="lines">
+                <div id="inline">
+
+                </div> 
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum quasi, est, numquam debitis tempore iste eligendi aperiam consequuntur in eos quas perferendis sunt! Molestiae adipisci minima cumque quam quisquam.</p>
+        <div id="scroll">
+            <i class="ri-mouse-line"></i>
+            <h5>Scroll Down</h5>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+    
+    <script>
+        var menu = document.querySelector('#menu');
+        var background = document.querySelector('#bg1');
+
+        menu.addEventListener('click',function(){
+            background.style.transform = 'scale(.8)';
+            background.style.borderRadius = '10px'
+            background.style.boxShadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+        })
+    </script>
+</body>
+</html>
